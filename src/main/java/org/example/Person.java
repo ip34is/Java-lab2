@@ -2,10 +2,10 @@ package org.example;
 
 import java.util.Objects;
 
-public class Person {
-    private String lastName;
-    private String firstName;
-    private int age;
+public final class Person {
+    private final String lastName;
+    private final String firstName;
+    private final int age;
 
     public Person(String lastName, String firstName, int age) {
         this.lastName = lastName;
@@ -14,13 +14,8 @@ public class Person {
     }
 
     public String getLastName() { return lastName; }
-    public void setLastName(String lastName) { this.lastName = lastName; }
-
     public String getFirstName() { return firstName; }
-    public void setFirstName(String firstName) { this.firstName = firstName; }
-
     public int getAge() { return age; }
-    public void setAge(int age) { this.age = age; }
 
     @Override
     public boolean equals(Object o) {
